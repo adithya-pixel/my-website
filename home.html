@@ -3,266 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aadhil Abdulla</title>
+    <title>Adithya Siju - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro-text, .about-section, .skills-section, .education-section, .contact-section {
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+        /* Profile and About */
+        .profile-image {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .about-text {
+            margin-top: 10px;
+        }
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .skills-grid .skill-item {
+            width: 45%;
+        }
+        /* Education */
+        .education-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+        }
+        /* Contact */
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-section input, .contact-section textarea {
+            width: 80%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        /* Social Icons */
+        .social-icons a {
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="top" id="page1"></div>
-    <div class="header">
-        <a href="#page1"><button>HOME</button></a>
-        <a href="#page2"><button>ABOUT ME</button></a>
-        <a href="#page3"><button>TECHNOLOGIES</button></a>
-        <a href="#page4"><button>PROJECTS</button></a>
-    </div> 
-    <div class="page1" >
-        <div class="page1_1">
-            <div class="title1">Hello World,</div>
-            <div class="title2">I'm <span>Aadhil Abdulla</span></div>
-            <div class="title3">a Software Developer </div>
-        </div>
-        <div class="vl"></div>
-        <div class="pfp"><img src="./images/pfp.jpg" alt="no image"></div>
+    <!-- Intro Section -->
+    <div class="intro-text">
+        <h1>Adithya Siju</h1>
+        <p>Student @ CUSAT, <br>MVoc Software Application Development</p>
+        <a class="btn page-scroll" href="#about">Learn More</a>
     </div>
-<div id="page2"></div>
-<div class="page2">
-    <div class="title1">
-        About Me
-    </div>
-    <div class="content1">👋 Hey there! I’m Aadhil Abdulla—a curious soul with a penchant for code and a heart that beats in binary.
-            My journey began at MES College Marampally, where I earned my bachelor’s degree in Computer Applications. Now, I’m riding
-            the master’s wave at CUSAT, diving deep into the art of crafting software solutions. Whether it’s web development, tinkering
-            with algorithms, or building pixel-perfect interfaces, I thrive on turning ideas into elegant lines of code. Join me on this
-            digital adventure—I promise there’ll be semicolons and coffee aplenty! ☕🚀
-    </div>
-    <div class="title2">
-            My Skills
-    </div>
-    <div class="content2">
-        <div class="icon">
-            <img src="./images/critical thinking.png" alt="">
-            <div class="iconDesc">Critical Thinking</div>
-        </div>
-        <div class="icon">
-            <img src="./images/communication.png" alt="">
-            <div class="iconDesc">Communication</div>
-        </div>
-        <div class="icon">
-            <img src="./images/ethics.png" alt="">
-            <div class="iconDesc">Strong Work Ethics</div>
-        </div>
-        <div class="icon">
-            <img src="./images/pofessionalism.png" alt="">
-            <div class="iconDesc">Professionalism</div>
-        </div>
-        <div class="icon">
-            <img src="./images/problem_solving.png" alt="">
-            <div class="iconDesc">Problem Solving</div>
-        </div>
-        <div class="icon">
-            <img src="./images/teamwork.png" alt="">
-            <div class="iconDesc">Teamwork</div>
-        </div>
+   
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skill">SKILLS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
 
+    <!-- About Section -->
+    <div id="about" class="about-section">
+        <img src="images/ee027615-b315-41a5-8c7f-0bc665898723.jpg" alt="Adithya Siju" class="profile-image">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hello! My name is Adithya Siju, and I am currently pursuing MVoc in Software Application Development at CUSAT.</p>
+            <p>I have a passion for software development, and I am constantly learning and improving my skills.</p>
+        </div>
     </div>
 
-</div>
-<div id="page3"></div>
-<div class="page3">
-        <div class="title">
-            Technologies
-        </div>
-
-        <div class="content">
-            <div class="techParent">
-                <div class="tech">
-                    HTML
-    <!--<div class="prog"></div> -->
-                </div>
-
-                <div class="tech">
-                    CSS
-                </div>
-
-                <div class="tech">
-                    C
-                </div>
-
-                <div class="tech">
-                    C++
-                </div>
-
-                <div class="tech">
-                    PHP
-                </div>
-
-                <div class="tech">
-                    Java
-                </div>
-
-                <div class="tech">
-                    Android
-                </div>
-
-                <div class="tech">
-                    Python
-                </div>
-
+    <!-- Skills Section -->
+    <div id="skill" class="skills-section">
+        <h1>My Skills</h1>
+        <p>Here are some of the technical and soft skills I've developed:</p>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><i class="fas fa-code"></i> HTML, CSS, JavaScript</li>
+                    <li><i class="fab fa-react"></i> React.js</li>
+                    <li><i class="fas fa-database"></i> Database Management (SQL)</li>
+                    <li><i class="fas fa-code-branch"></i> Git & GitHub</li>
+                </ul>
             </div>
-
-            <div class="progParent">
-                <div class="prog" id="html"></div>
-                <div class="prog" id="css"></div>
-                <div class="prog" id="c"></div>
-                <div class="prog" id="cpp"></div>
-                <div class="prog" id="php"></div>
-                <div class="prog" id="java"></div>
-                <div class="prog" id="android"></div>  
-                <div class="prog" id="python"></div>  
+            <div class="skill-item">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
+                    <li><i class="fas fa-users"></i> Teamwork & Collaboration</li>
+                    <li><i class="fas fa-comments"></i> Communication</li>
+                    <li><i class="fas fa-clock"></i> Time Management</li>
+                </ul>
             </div>
-
-
         </div>
-</div>
-<div id="page4"></div>
-
-<div class="page4">
-    <div class="title">
-        Projects
     </div>
 
-    <div class="projectTitle1">
-        1. Restaurant Management System
-    </div>
-    <div class="contentParent">
-        <div class="content1">
-            <p>The design of the Restaurant Management web application stems from a
-                fundamental commitment to address the evolving needs of the modern restaurant
-                industry. In a world where digitalization is transforming various sectors, we
-                recognized the potential to revolutionize traditional dining experiences through
-                technology integration. The key motivations behind the design are rooted in
-                enhancing customer satisfaction, optimizing kitchen operations, and providing
-                administrators with the necessary tools for efficient management.
-            </p>
-            <p>
-                Customer satisfaction lies at the heart of the project, prompting the creation of a
-                user-friendly platform that empowers patrons to effortlessly navigate through the
-                ordering process. By allowing customers to place orders directly through the web
-                application, specifying their table numbers and food preferences, we aimed to
-                eliminate the hassles associated with traditional order-taking methods. The
-                system's real-time updates on order status not only keep customers informed but
-                also contribute to a more transparent and engaging dining experience.
-            </p>
-            <p>
-                Efficiency in kitchen operations is another cornerstone of the design. The
-                dedicated login for kitchen staff enables them to seamlessly manage incoming
-                orders, prioritize tasks, and monitor the preparation status for each table. The
-                introduction of a "prepared" button facilitates prompt communication between the
-                kitchen and customers, ensuring a smooth flow of information and reducing
-                unnecessary wait times. This streamlined process contributes to an overall
-                improvement in service quality and operational effectiveness.
-            </p>
-            <p>
-                In essence, the Restaurant Management project is meticulously designed to
-                elevate the dining experience by embracing the advantages of technology. By
-                addressing the specific pain points of customers, kitchen staff, and
-                administrators, we aim to contribute to a more efficient, transparent, and
-                enjoyable dining environment for all stakeholders involved. This design rationale
-                underscores the commitment to harnessing technology for positive transformation
-                within the restaurant industry.
-            </p>
+    <!-- Education Section -->
+    <div id="education" class="education-section">
+        <h1>My Education</h1>
+        <p>I am currently pursuing an MVoc in Software Application Development at CUSAT.</p>
+        <div class="education-list">
+            <div><h2>Primary Education</h2><p>St. Antony's School (Primary to 4th Grade)</p></div>
+            <div><h2>Secondary Education</h2><p>Sree Narayana Vilasam Higher Secondary School</p><div class="progress-bar-container"><div class="progress-bar" style="width: 99%;">99%</div></div><div class="progress-bar-container"><div class="progress-bar" style="width: 95%;">95%</div></div></div>
+            <div><h2>Undergraduate</h2><p>NSS College, Rajakumari (Grade: A)</p></div>
+            <div><h2>Postgraduate</h2><p>CUSAT - MVoc in Software Application Development</p></div>
         </div>
-        <div class="content2">
-            <div class="container1">
-                <div class="imgcontainer"> 
-                    <img src="./images/project_images/project1_1.png" alt="">
-                </div>
+    </div>
 
-                <div class="imgcontainer" id="img2"> 
-                    <img src="./images/project_images/project1_2.png" alt="">
-                </div>
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, please use the form below or reach out to me via social media.</p>
+        <form action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+        <div class="social">
+            <p>Feel free to reach out via social media:</p>
+            <div class="social-icons">
+                <a href="https://github.com/adithya-pixel" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/adithyasiju?igsh=ZXdxYzVqajI2Mm9n" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/adithya-siju-82a651276/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/qr/P7H67GEGSSF6P1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
             </div>
-
-            <div class="container2">
-                <div class="imgcontainer"> 
-                    <img src="./images/project_images/project1_5.png" alt="">
-                </div>
-
-                <div class="imgcontainer" id="img4"> 
-                    <img src="./images/project_images/project1_4.png" alt="">
-                </div>
-            </div>
-
-
         </div>
     </div>
 
-    <div class="projectTitle2">
-        2. AMS (Attendance Management System) using Face Recognition 
-    </div>
-<div class="contentParent2">
-    <div class="content">
-        <p>
-            The project, titled "AMS using Face Recognition," represents a sophisticated integration
-            of several modules, each serving a crucial role in the system's functionality. Leveraging
-            modules like NumPy, OpenCV, Openpyxl, Pandas, Pillow, and Pyttsx3, your system
-            creates a seamless process for managing attendance in educational environments.
-
-        </p>
-        <p>
-            At its core, your system harnesses the power of Face Recognition technology, made
-            possible by OpenCV, to facilitate the identification and tracking of individual students.
-            Through the use of webcam input, the system captures live video feeds, enabling realtime analysis of facial features.
-
-        </p>
-        <p>
-            The initial step involves training a robust data model, a process facilitated by NumPy
-            and OpenCV. By providing images of individual students, the system learns to recognize
-            and differentiate between faces, creating a personalized profile for each student. This
-            training phase lays the foundation for accurate and reliable attendance tracking.
-
-        </p>
-        <p>
-            During classroom sessions, the system continuously monitors the webcam feed,
-            scanning for recognized faces. When a familiar face appears, the system automatically
-            registers attendance for the corresponding student, associating it with the relevant
-            subject. This automation significantly reduces the administrative burden on educators,
-            allowing them to focus more on teaching.
-
-        </p>
-        <p>
-            Administrators can easily access attendance records through a user-friendly interface.
-            By clicking on the "View Attendance" option, the system calculates overall attendance
-            based on the sessions attended by each student. Utilizing Pandas and Openpyxl, the
-            system compiles this data into a comprehensive CSV file, facilitating further analysis
-            and reporting.
-
-        </p>
-        <p>
-            While a detailed understanding of the system's code would undoubtedly enhance
-            comprehension, the overview provided paints a clear picture of its functionality and
-            significance. Should you choose to share your code, it could offer valuable insights into
-            the intricacies of implementation and serve as a springboard for further discussion and
-            analysis.            
-        </p>
-    </div>
-</div>
-</div>
-
-
-<div class="footer">
-    <div class="footer_parent">
-        <div class="footer_icons">
-            <img class="img1" src="./images/footer_images/linkedin-black.png" alt="no image">
-            <a href="https://www.linkedin.com/in/aadhil-abdulla" target="_blank">LinkedIn</a>
-        </div>
-        <div class="footer_icons">
-            <img class="img2" src="./images/footer_images/github.png" alt="no image">
-            <a href="https://github.com/aadhilabdulla/" target="_blank">GitHub</a>
-        </div>
-        <div class="footer_icons">
-            <img class="img3" src="./images/footer_images/instagram.png" alt="no image">
-            <a href="https://www.instagram.com/aadhil.abdulla/" target="_blank">Instagram</a>
-        </div>
-    </div>
-</div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Adithya Siju. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
 </body>
 </html>
